@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import './pages.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import 'aos/dist/aos.js';
+
 
 export default function Home() {
     useEffect(() => {
@@ -44,6 +46,7 @@ export default function Home() {
         window.removeEventListener('scroll', reveal);
       };
     }, []); 
+    
 //home page
   return (
     <div className="front-page">
@@ -52,8 +55,6 @@ export default function Home() {
        <img src="./src/components/images/birds.png" id="birds"/>
        <img src="./src/components/images/waters.png" id="waters" />
      <div className="cover">
-        <Link to="/register"><h1>Register</h1></Link>
-        <Link to="/login"><h1>Login</h1></Link>
         <p className="name">Solace</p>
         <p className="motto">A virtual sanctuary of cherished memories</p>
      </div>
@@ -86,17 +87,17 @@ export default function Home() {
        <h1 data-aos="fade-up" data-aos-duration="1000">Features</h1>
        <div data-aos="fade-up" data-aos-duratoin="2000" className = "feature-containers">
          <div className ="feature1-container">
-           <img src="./src/components/images/familyphotos.png" className="features-image1"/>
+           <img src="./src/components/images/computer.jpg" className="features-image1"/>
            <p>Feel connected with family members at all times with your personal homeboard.</p> {'\n'}
          </div>
 
          <div className ="feature2-container">
-           <img src="./src/components/images/calendar.jpg"className="features-image2" />
+           <img src="./src/components/images/google.jpg"className="features-image2" />
            <p>Create events with Google Calendar to set reminders to reconnect with family and friends.</p> {'\n'}
          </div>
 
          <div className ="feature3-container">
-           <img src="./src/components/images/cooking.png"className="features-image3" />
+           <img src="./src/components/images/cooking.jpg"className="features-image3" />
            <p>Explore thousands of recipes at your fingertips to connect with your heritage and immerse yourself in a variety of cultures.</p>
          </div>
        </div>
@@ -106,6 +107,7 @@ export default function Home() {
        <div className="signup">
          <h3 data-aos="fade-up"><strong> Start reconnecting!</strong></h3>
          <Link to="/Register"><button data-aos="fade-down" className="button">Sign up</button></Link>
+         <Link to="/Login"><button data-aos="fade-down" className="button">Login</button></Link>
          <img src="./src/components/images/corgi.png" data-aos="fade-left" className ="endpics"/>
          <img src="./src/components/images/friends.png" data-aos="fade-right" className ="endpics2" />
          <p> All features are <strong>FREE!</strong></p>

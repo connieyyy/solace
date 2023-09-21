@@ -20,8 +20,8 @@ export const AuthContextProvider = ({ children }) => {
     return signInWithEmailAndPassword(auth, email, password)
    }
 
-  const Logout = () => {
-      return Logout(auth)
+  const logout = () => {
+      return signOut(auth)
   }
 
   useEffect(() => {
@@ -35,7 +35,7 @@ export const AuthContextProvider = ({ children }) => {
   }, []);
 
   return (
-    <UserContext.Provider value={{ createUser, user, Logout, Login }}>
+    <UserContext.Provider value={{ createUser, user, logout, Login }}>
       {children}
     </UserContext.Provider>
   );
