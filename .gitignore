@@ -25,3 +25,9 @@ dist-ssr
 
 #contains API Key
 firebase.js
+.env
+Asian.jsx
+African.jsx
+European.jsx
+LatinAmerica.jsx
+config.js

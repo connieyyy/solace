@@ -4,7 +4,6 @@ import Login from './components/Login';
 import Register from './components/Register';
 import Dashboard from './components/Dashboard';
 import Homeboard from './components/Homeboard';
-import Recipes from './components/Recipes';
 import { Route, Routes } from 'react-router-dom';
 import { AuthContextProvider } from './context/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
@@ -21,7 +20,6 @@ function App() {
           <Route path='/register' element={<Register/>} />
           <Route path='/dashboard' element={<ProtectedRoute><Dashboard/></ProtectedRoute>} />
           <Route path='/homeboard' element={<ProtectedRoute><Homeboard/></ProtectedRoute>} />
-          <Route path='/recipes' element={<ProtectedRoute><Recipes/></ProtectedRoute>} />
         </Routes>
         </AuthContextProvider>
        
