@@ -93,12 +93,12 @@ export default function Home() {
 
          <div className ="feature2-container">
            <img src="./src/components/images/google.jpg"className="features-image2" />
-           <p>Create events with Google Calendar to set reminders to reconnect with family and friends.</p> {'\n'}
+           <p>Create personal messages about family and friends to demonstrate your appreciation for them.</p> {'\n'}
          </div>
 
          <div className ="feature3-container">
            <img src="./src/components/images/cooking.jpg"className="features-image3" />
-           <p>Explore thousands of recipes at your fingertips to connect with your heritage and immerse yourself in a variety of cultures.</p>
+           <p>Explore new weekly recipes at your fingertips to connect with your heritage and immerse yourself in a variety of other cultures.</p>
          </div>
        </div>
      </div>

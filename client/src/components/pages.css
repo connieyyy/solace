@@ -379,9 +379,13 @@ color: white;
     padding-right: 20px;
 }
 
+.message-board{
+    padding-top: 40px;
+}
 .messagetitle {
     text-align: center;
 }
 .message-purpose {
-    padding-left: 50px;
+    text-align: center;
+    padding: 10px;
 }
